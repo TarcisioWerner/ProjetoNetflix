@@ -1,0 +1,192 @@
+/* #region | Reset XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Impede que o conteúdo interno ultrapasse o width do site */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+} 
+
+body{
+    margin: 0;
+    padding: 0;      
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+a{
+    color: var(--vermelho);
+}
+
+/* #endregion Reset */ 
+
+/* #region | Header XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+    
+    /* #region > Container xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+        /* #) Container */
+        header .Container{
+            border: 1px solid black;
+            display: flex; /* Transforma itens em linhas*/
+            flex-direction: row;
+            align-items: center; /* Centraliza os itens verticalmente*/
+            justify-content: space-between; /* Primeiro item: eixo principal +  último iten: Final do eixo + Demais elementos são distribuídos uniformemente entre eles*/
+        }
+
+    /* #endregion Container*/    
+
+        /* #region > Logo =================================================================================*/
+
+            /* #) Container */
+            .Header_Logo img {
+                width: 110px;
+                padding-left:20px;
+                padding-top:12px;
+                padding-bottom: 5px;
+            }
+
+        /* #endregion Coluna 1*/    
+
+        /* #region > Navbar ==================================================================================*/
+
+        /* #) Container */
+        header .Header_Nav {
+        }   
+        
+            /* 1) Elemento | Links */
+            header nav a{
+                color:#AAA;
+                margin-right: 10px;
+            } 
+
+            /* 2) Elemento | Quando o mouse estiver em cima do nome */
+            header nav a:hover{
+                color:#FFF;
+            } 
+    
+    /* #endregion Coluna 2 */  
+
+/* #endregion Header */    
+
+/* #region | Main XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+    /* #region > Container xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+        /* #) Bloco Site */
+        .Filme_Principal{
+            color: white;
+            font-size: 1em;
+            min-height: 400px;
+            background-image: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url('../images/sherlock_capa.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 100px -110px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza verticalmente*/
+            align-items: flex-start; /* Alinhados à Esquerda */   
+            padding-left:20px;      
+            padding-right:20px;   
+        }    
+
+        /* Container */
+        main .Container{
+            width: 70%;
+            text-align: justify;
+        }
+
+    /* #endregion Container*/  
+
+        /* #region > Sinopse =================================================================================*/
+        
+            /* #) Container */
+            main .Botoes{
+                margin-top:40px;
+            }
+
+                /* 1) Elemento | Titulo*/
+                .Titulo{
+                    margin-top:40px;
+                    margin-bottom:10px;
+                    font-size: 2.8em;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }   
+
+        /* #endregion Sinopse */     
+        
+        /* #region > Botões =================================================================================*/
+        
+            /* 1) Elemento */
+            .Botao{
+                background-color: rgba(0,0,0,.70);
+                border:none;
+                color:white;
+                padding:15px 30px;
+                margin-right: 15px;
+                font-size: 0.8em;
+                cursor:pointer;
+                transition: .4s ease all;                
+            }
+
+            /* 2) Elemento */
+            .Botao:hover{
+                color:black;
+                background-color: white;
+            }
+
+            /* 3) Elemento */
+            .Botao i{
+                margin-right: 8px;
+            }
+
+            /* 4) Elemento*/
+            .Botoes{
+                margin-bottom:40px;
+            }
+
+
+        /* #endregion Botões */  
+   
+/* #endregion Main */  
+
+/* #region | Carrosel XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+    /* #region > Container xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    .Carrosel{
+        margin-top:10px; 
+    }
+
+    /* #endregion Container */ 
+
+        /* #region > Item carrousel =================================================================================*/
+        .box_mini{
+            display: block;
+        }
+        
+        /* #endregion Item carrousel */ 
+        
+/* #endregion Carrosel */ 
+
+/* #region | Autora XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+    .Autora{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:10px;
+        margin-bottom:20px;   
+        color:#AAA;     
+    }
+
+    .Autora p {
+        font-size: 1.1em;
+    }
+
+/* #endregion Autora */ 
